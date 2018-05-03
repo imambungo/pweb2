@@ -6,24 +6,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/index.js"></script>
     <script src="js/jquery-slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="js/popper.min.js"></script> -->
+
     <style>
         /* Make the image fully responsive */
-
         .carousel-inner img {
             width: 100%;
             height: 100%;
         }
-        
     </style>
 </head>
 
 <body class="bg-dark">
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">Pemandangan</a>
+        <a id="logo" class="navbar-brand" href="#">Pemandangan</a>
     
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -32,13 +33,13 @@
             <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Galeri I</a>
+                    <a id="g1" class="nav-link active" href="#" onclick="g1()">Galeri I</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="galeri2.html">Galeri II</a>
+                    <a id="g2" class="nav-link" href="#" onclick="g2()">Galeri II</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="galeri3.html">Galeri III</a>
+                    <a id="g3" class="nav-link" href="#" onclick="g3()">Galeri III</a>
                 </li>
             </ul>
         </div>
@@ -52,13 +53,13 @@
         </ul>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/a.jpg" alt="Los Angeles" width="1100" height="500">
+                <img id="ga" src="img/a.jpg" alt="gambar 1" width="1100" height="500">
             </div>
             <div class="carousel-item">
-                <img src="img/b.jpg" alt="Chicago" width="1100" height="500">
+                <img id="gb" src="img/b.jpg" alt="gambar 2" width="1100" height="500">
             </div>
             <div class="carousel-item">
-                <img src="img/c.jpg" alt="New York" width="1100" height="500">
+                <img id="gc" src="img/c.jpg" alt="gambar 3" width="1100" height="500">
             </div>
         </div>
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -71,9 +72,9 @@
 
     <!--Copyright-->
     <footer class="footer-copyright py-3 text-center text-light">
-        © 2018 Copyright:
+        &#169; 2018 Copyright:
         <a href="https://imambungo.github.io" target="_blank"> M. Imam Pratama</a>
-        <a href="£" target="_blank"> /</a>
+        /
         <a href="https://github.com/imambungo/pweb2" target="_blank"> 09021281722063 </a>
     </footer>
     <!--/.Copyright-->
